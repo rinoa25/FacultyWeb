@@ -1,0 +1,8 @@
+[{
+  "_id": {
+    "$oid": "5fc1a2cf40c900707c8a1fd9"
+  },
+  "researchTitle": "Operating System Security",
+  "researchDescrip": "Operating security is a series of steps and measures used to protect the operating system from threats, viruses and hackers.",
+  "researchImg": "/images/icon.jpg"
+}]

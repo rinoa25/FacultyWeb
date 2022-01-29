@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Research Interest and Programs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/myJS.js">
+    </script>
+    <script src="js/serverJS.js">
+    </script>
+  </head>
+
+  <body ng-app="WebApp">
+
+    <nav>
+      <a href="http://localhost:8080/login/">
+      <div class="logo">Julie Thorpe</div>
+      </a>
+      <input type="checkbox" id="click">
+
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pub.html">Publications</a></li>
+        <li><a  href="press.html">Press</a></li>
+        <li><a class= "active" href="research.html">Research Interest and Programs</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="group.html">Research Group</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="spacer">
+      &nbsp;
+    </div>
+
+    <div class="content" id ="card">
+
+      <div class="Mtitle">
+        <h1>INTERESTS</h1>
+      </div>
+
+      <!--Interest Section -->
+      <section class="interest">
+
+        <!--Interest #1 - Authentication -->
+        <div class="interest_box">
+          <div class="front-face">
+            <span>Authentication</span>
+          </div>
+          <div class="back-face">
+            <span>Authentication</span>
+            <p>Authentication is a process where it is used to recognize user’s identity to
+              grant them access to a file or a database.</p>
+          </div>
+        </div>
+
+     <!--Interest #2 - Software Security -->
+        <div class="interest_box">
+          <div class="front-face">
+            <span>Software Security</span>
+          </div>
+          <div class="back-face">
+            <span>Software Security</span>
+            <p>Software Security is defined as an "application of techniques that assess, mitigate,
+              and protect software systems from vulnerabilities"</p>
+          </div>
+        </div>
+
+       <!--Interest #3 - Human Factor -->
+        <div class="interest_box">
+          <div class="front-face">
+            <span>Human Factor </span>
+          </div>
+          <div class="back-face">
+            <span>Human Factor</span>
+            <p>Human Factor is the process of making human and
+              computer interaction as easy as possible.</p>
+          </div>
+        </div>
+
+      <!--Interest #4 - Useability -->
+        <div class="interest_box">
+          <div class="front-face">
+            <span>Usability</span>
+          </div>
+          <div class="back-face">
+            <span>Usability </span>
+            <p>Usability is a measurement on how specific a user can use a
+              product or a design effectively and efficiently. It is based on
+              human behaviour and how they react to certain product or design. </p>
+          </div>
+        </div>
+
+      <!--Interest #5 - Passwords -->
+        <div class="interest_box">
+          <div class="front-face">
+            <span>Passwords</span>
+          </div>
+          <div class="back-face">
+            <span>Password</span>
+            <p>Password is a string of letters, numbers or special characters that you should
+              never share to anyone. It is used to confirm a identity of a user in a
+              platform you are using. </p>
+          </div>
+        </div>
+
+      <!--Interest #6 - Biometrics -->
+        <div class="interest_box">
+          <div class="front-face">
+            <span>Biometrics</span>
+          </div>
+          <div class="back-face">
+            <span>Biometrics</span>
+            <p>Biometrics are a body measurement and calculation of humans
+              used as a tool for authentication. It is specific and distinct that it
+              can only work with the user so that other people don’t have access to it.</p>
+          </div>
+        </div>
+
+       <!--Interest #7 -Security Policy -->
+        <div class="interest_box">
+          <div class="front-face">
+            <span>Security Policy</span>
+          </div>
+          <div class="back-face">
+            <span>Security Policy</span>
+            <p>Security Policy is a set of rules and procedure
+              required by the organization or a company for all individual
+              accessing all IT and resources of the company.</p>
+          </div>
+        </div>
+
+      <!--Interest #8 - Brain Computer Interfaces -->
+        <div class="interest_box">
+          <div class="front-face">
+            <span>Brain Computer Interfaces</span>
+          </div>
+          <div class="back-face">
+            <span>Brain Computer Interfaces</span>
+            <p>Brain computer interfaces is a direct communication between users brain
+              and a computer. </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Project Section -->
+      <section class="project" ng-controller="researchCtrl">
+
+      <!--Heading Title - Projects-->
+        <div class="Mtitle2">
+          <h1>PROJECTS</h1>
+        </div>
+
+      <!--Project #1 - Operating System Security -->
+        <div class="project_box">
+          <div class="grid-container--fit">
+          <div class="project_front-face">
+            <div class ="icon">
+              <img ng-src={{researchImg}} alt="Image of Project">
+            </div>
+            <span>{{researchTitle}}</span>
+        </div>
+          <div class="project_back-face">
+            <span>{{researchTitle}}</span>
+            <p>{{researchDescrip}}</p>
+          </div>
+        </div>
+        </div>
+
+      </section>
+
+    </div>
+
+  </body>
+</html>

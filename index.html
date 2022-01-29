@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/myJQ.js">
+    </script>
+    <script src="js/myJS.js">
+    </script>
+    <script src="js/serverJS.js">
+    </script>
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="http://localhost:8080/login/">
+      <div class="logo">Julie Thorpe</div>
+      </a>
+      <input type="checkbox" id="click">
+
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="pub.html">Publications</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="research.html">Research Interest and Programs</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="group.html">Research Group</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="spacer">
+      &nbsp;
+    </div>
+
+    <div class="content" ng-app="WebApp">
+
+      <!--Home Section-->
+      <section class ="home" id="home">
+        <div class= "max-width">
+          <div class= "home-content">
+            <div class ="text-1"><span class="typing"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section-->
+    <section class="aboutme" id="aboutme" ng-controller="bioCtrl">
+        <div class="max-width">
+         <h2 class="title"><b>BIOGRAPHY</b></h2>
+               <div class="aboutme-content">
+                <div class="column left">
+                    <img style="margin-top:-160px" ng-src={{profilePic}} alt="Image of Professor">
+                </div>
+              <div class="column right">
+                <div class="text-3"><i class="italicbio">{{specialM}}</i><br>
+                  {{biography}}
+                </div>
+              </div>
+             </div>
+          </div>
+     </section>
+
+     <!--News Section-->
+     <section class = "news" id = "news" ng-controller="newsCtrl">
+       <div class="max-width">
+         <h2 class="title"><b>NEWS</b></h2>
+        <div class="carousel owl-carousel" >
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news.newsTitle}}</div>
+              <p>{{news.newsDate}}, {{news.newsMonth}} {{news.newsDay}}, {{news.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news2.newsTitle}}</div>
+              <p>{{news2.newsDate}}, {{news2.newsMonth}} {{news2.newsDay}}, {{news2.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup2()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news3.newsTitle}}</div>
+              <p>{{news3.newsDate}}, {{news3.newsMonth}} {{news3.newsDay}}, {{news3.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup3()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news4.newsTitle}}</div>
+              <p>{{news4.newsDate}}, {{news4.newsMonth}} {{news4.newsDay}}, {{news4.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup4()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news5.newsTitle}}</div>
+              <p>{{news5.newsDate}}, {{news5.newsMonth}} {{news5.newsDay}}, {{news5.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup5()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news6.newsTitle}}</div>
+              <p>{{news6.newsDate}}, {{news6.newsMonth}} {{news6.newsDay}}, {{news6.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup6()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news7.newsTitle}}</div>
+              <p>{{news7.newsDate}}, {{news7.newsMonth}} {{news7.newsDay}}, {{news7.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup7()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news8.newsTitle}}</div>
+              <p>{{news8.newsDate}}, {{news8.newsMonth}} {{news8.newsDay}}, {{news8.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup8()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news9.newsTitle}}</div>
+              <p>{{news9.newsDate}}, {{news9.newsMonth}} {{news9.newsDay}}, {{news9.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup9()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <img src="images/news.jpg" alt="">
+              <div class="text">News: {{news10.newsTitle}}</div>
+              <p>{{news10.newsDate}}, {{news10.newsMonth}} {{news10.newsDay}}, {{news10.newsYear}}
+              </p>
+              <div class="btn">
+                <button onclick="triggerPopup10()">Read more</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="popup" id="popup1">
+        <div class="newsOverlay" onclick="triggerPopup()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup()">&times;</div>
+          <h1>{{news.newsTitle}}</h1>
+          <h4>{{news.newsDate}}, {{news.newsMonth}} {{news.newsDay}}, {{news.newsYear}}
+          </h4><br>
+          <p>{{news.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup2">
+        <div class="newsOverlay" onclick="triggerPopup2()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup2()">&times;</div>
+          <h1>{{news2.newsTitle}}</h1>
+          <h4>{{news2.newsDate}}, {{news2.newsMonth}} {{news2.newsDay}},
+            {{news2.newsYear}}</h4><br>
+          <p>{{news2.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup3">
+        <div class="newsOverlay" onclick="triggerPopup3()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup3()">&times;</div>
+          <h1>{{news3.newsTitle}}</h1>
+          <h4>{{news3.newsDate}}, {{news3.newsMonth}} {{news3.newsDay}},
+            {{news3.newsYear}}</h4><br>
+          <p>{{news3.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup4">
+        <div class="newsOverlay" onclick="triggerPopup4()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup4()">&times;</div>
+          <h1>{{news4.newsTitle}}</h1>
+          <h4>{{news4.newsDate}}, {{news4.newsMonth}} {{news4.newsDay}},
+            {{news4.newsYear}}</h4><br>
+          <p>{{news4.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup5">
+        <div class="newsOverlay" onclick="triggerPopup5()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup5()">&times;</div>
+          <h1>{{news5.newsTitle}}</h1>
+          <h4>{{news5.newsDate}}, {{news5.newsMonth}} {{news5.newsDay}},
+            {{news5.newsYear}}</h4><br>
+          <p>{{news5.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup6">
+        <div class="newsOverlay" onclick="triggerPopup6()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup6()">&times;</div>
+          <h1>{{news6.newsTitle}}</h1>
+          <h4>{{news6.newsDate}}, {{news6.newsMonth}} {{news6.newsDay}},
+            {{news6.newsYear}}</h4><br>
+          <p>{{news6.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup7">
+        <div class="newsOverlay" onclick="triggerPopup7()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup7()">&times;</div>
+          <h1>{{news7.newsTitle}}</h1>
+          <h4>{{news7.newsDate}}, {{news7.newsMonth}} {{news7.newsDay}},
+            {{news7.newsYear}}</h4><br>
+          <p>{{news7.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup8">
+        <div class="newsOverlay" onclick="triggerPopup8()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup8()">&times;</div>
+          <h1>{{news8.newsTitle}}</h1>
+          <h4>{{news8.newsDate}}, {{news8.newsMonth}} {{news8.newsDay}},
+            {{news8.newsYear}}</h4><br>
+          <p>{{news8.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup9">
+        <div class="newsOverlay" onclick="triggerPopup9()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup9()">&times;</div>
+          <h1>{{news9.newsTitle}}</h1>
+          <h4>{{news9.newsDate}}, {{news9.newsMonth}} {{news9.newsDay}},
+            {{news9.newsYear}}</h4><br>
+          <p>{{news9.newsContent}}</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup10">
+        <div class="newsOverlay" onclick="triggerPopup10()"></div>
+        <div class="newsInfo">
+          <div class="closeBtn" onclick="triggerPopup10()">&times;</div>
+          <h1>{{news10.newsTitle}}</h1>
+          <h4>{{news10.newsDate}}, {{news10.newsMonth}} {{news10.newsDay}},
+            {{news10.newsYear}}</h4><br>
+          <p>{{news10.newsContent}}</p>
+        </div>
+      </div>
+
+    </section>
+
+    </div>
+
+  </body>
+</html>

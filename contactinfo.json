@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "5fc1ceb0284dd693b4426d91"
+  },
+  "address": "UOIT Business & Information Technology\r\n2000 Simcoe St N, Oshawa, Ontario, L1H 7K4",
+  "email": "julie.thorpe@ontariotechu.ca",
+  "phone": "(905) 721-8668",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.6574872626325!2d-78.89819788498339!3d43.945761741481874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51b9a6af8ae7f%3A0x2a373a19593716f5!2sOntario%20Tech%20University!5e0!3m2!1sen!2sca!4v1606535399319!5m2!1sen!2sca"
+}]

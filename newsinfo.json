@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "5fc0a4146170f60048569712"
+  },
+  "newsTitle": "The Security AI Networks Lab",
+  "newsDate": "Thursday",
+  "newsMonth": "Jan",
+  "newsDay": "23",
+  "newsYear": "2020",
+  "newspos": "1",
+  "newsContent": "SAIN WEBSITE\r\n\r\nYing Zhu, Amirali Abari, and I founded the Security, Artificial Intelligence, and Networks Lab (SAIN Lab) in 2017. The SAIN Lab performs applied, multidisciplinary, and innovative research on networks, computer systems, data, and intelligent decision systems. Our research touches many vibrant and exciting disciplines such as information security, privacy, artificial intelligence, application networks, and human computer interaction. Our motto is simple: “Do sane research at SAIN,” where sane research is defined as impactful research that enhances the daily lives of people, nations, and organizations, as well as being the foundation of other impactful research and development. Lab members have access to high-performance GPU servers, high-performance traditional servers, and web servers. Members also have access to the Human-Centred Computing Lab for running studies with human subjects."
+},{
+  "_id": {
+    "$oid": "5fc0a6146170f60048569713"
+  },
+  "newsTitle": "Multiple M.Sc. and Ph.D. openings",
+  "newsDate": "Thursday",
+  "newsMonth": "Jan",
+  "newsDay": "16",
+  "newsYear": "2020",
+  "newspos": "2",
+  "newsContent": "We have multiple M.Sc. and Ph.D. openings in the SAIN Lab. The candidates will be enrolled in the Computer Science program at Ontario Tech University, Canada. Successful applicants will be advised by one or two of the lab faculty members in any of the research focal areas of the lab.The openings come with research and teaching assistantship funding for the typical duration of the program.\r\n\r\nQualifications\r\nIn addition to minimum requirements for Ph.D. or M.Sc. admission, candidates are expected to have a degree in computer science, computer engineering, mathematics, statistics, or any other related field. Candidates must have also a strong background in statistics and programming. Prior knowledge of machine learning is also an asset. Candidates should be enthusiastic about learning new methods and applying their expertise in innovative ways. Prior experience in interdisciplinary research will be an asset.\r\n\r\nApplication\r\nThe positions start from either September 1st, 2020 or January 1st 2021 (based on mutual agreement). Before applying formally for a position through Ontario Tech graduate studies, the interested applicants should submit the cover letter along with CV, transcripts, and a sample of publication (if any) by email to abari@uoit.ca and julie.thorpe@uoit.ca."
+},{
+  "_id": {
+    "$oid": "5fc145ab6170f60048569715"
+  },
+  "newsTitle": "To appear in NSPW 2019",
+  "newsDate": "Monday",
+  "newsMonth": "Sep",
+  "newsDay": "23",
+  "newsYear": "2019",
+  "newspos": "3",
+  "newsContent": "To appear in NSPW 2019 : “Towards Models for Quantifying the Known Adversary.” Alaadin Addas, Julie Thorpe, Amirali Salehi-Abari. Proceedings of the New Security Paradigms Workshop (NSPW), 2019"
+},{
+  "_id": {
+    "$oid": "5fc1471a6170f60048569716"
+  },
+  "newsTitle": "To appear in PST 2019",
+  "newsDate": "Monday",
+  "newsMonth": "Aug",
+  "newsDay": "26",
+  "newsYear": "2019",
+  "newspos": "4",
+  "newsContent": "To appear in PST 2019 : “Geographical Security Questions for Fallback Authentication.” Alaadin Addas, Julie Thorpe, Amirali Salehi-Abari. Proceedings of the 15th International Conference on Privacy, Security and Trust (PST), 2019.\r\n\r\nTo appear in PST 2019 : \"An Exploration of Geographic Authentication Schemes\". B. MacRae, A. Salehi-Abari, and J. Thorpe. IEEE Transactions on Information Forensics and Security (TIFS). 11(9):1997-2012, 2016."
+},{
+  "_id": {
+    "$oid": "5fc147646170f60048569717"
+  },
+  "newsTitle": "To appear in JISA",
+  "newsDate": "Sunday",
+  "newsMonth": "Apr",
+  "newsDay": "14",
+  "newsYear": "2019",
+  "newspos": "5",
+  "newsContent": "To appear in JISA : “On Password Behaviours and Attitudes in Different Populations.” Ruba Alomari, Julie Thorpe. Journal of Information Security and Applications (JISA), 2019."
+},{
+  "_id": {
+    "$oid": "5fc148486170f60048569718"
+  },
+  "newsTitle": "To appear in IJIS",
+  "newsDate": "Thursday",
+  "newsMonth": "Feb",
+  "newsDay": "14",
+  "newsYear": "2019",
+  "newspos": "6",
+  "newsContent": "To appear in IJIS : “Enhanced Tacit Secrets.” Zeinab Joudaki, Julie Thorpe, Miguel Vargas Martin. International Journal of Information Security (IJIS), 2019."
+},{
+  "_id": {
+    "$oid": "5fc148986170f60048569719"
+  },
+  "newsTitle": "To appear in CCS 2018",
+  "newsDate": "Monday",
+  "newsMonth": "Oct",
+  "newsDay": "15",
+  "newsYear": "2018",
+  "newspos": "7",
+  "newsContent": "To appear in CCS 2018 : “Reinforcing System-Assigned Passphrases Through Implicit Learning.” Zeinab Joudaki, Julie Thorpe, Miguel Vargas Martin. ACM SIGSAC Conference on Computer and Communications Security (CCS), 2018."
+},{
+  "_id": {
+    "$oid": "5fc1498c6170f6004856971a"
+  },
+  "newsTitle": "The International Conference (PST 2018)",
+  "newsDate": "Tuesday",
+  "newsMonth": "Aug",
+  "newsDay": "28",
+  "newsYear": "2018",
+  "newspos": "8",
+  "newsContent": "The International Conference on Privacy, Security, and Trust (PST 2018) has announced its call for papers. I am serving as a program committee member."
+},{
+  "_id": {
+    "$oid": "5fc149c36170f6004856971b"
+  },
+  "newsTitle": "Congratulations to Alaadin Addas",
+  "newsDate": "Friday",
+  "newsMonth": "Jul",
+  "newsDay": "27",
+  "newsYear": "2018",
+  "newspos": "9",
+  "newsContent": "Congratulations to Alaadin Addas for successfully defending his MSc thesis on \"Systems and Models for Secure Fallback Authentication\"!"
+},{
+  "_id": {
+    "$oid": "5fc149fd6170f6004856971c"
+  },
+  "newsTitle": "ITSRG Summer 2018",
+  "newsDate": "Wednesday",
+  "newsMonth": "May",
+  "newsDay": "23",
+  "newsYear": "2018",
+  "newspos": "10",
+  "newsContent": "ITSRG Schedule\r\n\r\nReading Group Schedule for ITSRG posted for Summer 2018"
+}]

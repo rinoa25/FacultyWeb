@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "5fc1b15140c900707c8a1fdc"
+  },
+  "courseTitle": "Operating System Security",
+  "courseNumber": "INFR 3610",
+  "courseSem": "WINTER",
+  "courseYear": "2021",
+  "coursepos": "1"
+},{
+  "_id": {
+    "$oid": "5fc1b17440c900707c8a1fdd"
+  },
+  "courseTitle": "IT Security Policies & Procedures",
+  "courseNumber": "INFR 4680",
+  "courseSem": "FALL",
+  "courseYear": "2020",
+  "coursepos": "2"
+},{
+  "_id": {
+    "$oid": "5fc1b19940c900707c8a1fde"
+  },
+  "courseTitle": "Operating System Security",
+  "courseNumber": "MITS 5300",
+  "courseSem": "WINTER",
+  "courseYear": "2020",
+  "coursepos": "3"
+},{
+  "_id": {
+    "$oid": "5fc1b36f40c900707c8a1fdf"
+  },
+  "courseTitle": "Database Systems",
+  "courseNumber": "INFR 3810",
+  "courseSem": "FALL",
+  "courseYear": "2019",
+  "coursepos": "4"
+},{
+  "_id": {
+    "$oid": "5fc1b3ed40c900707c8a1fe0"
+  },
+  "courseTitle": "Malware & Software Security",
+  "courseNumber": "INFR 4670",
+  "courseSem": "WINTER",
+  "courseYear": "2019",
+  "coursepos": "5"
+},{
+  "_id": {
+    "$oid": "5fc1b45c40c900707c8a1fe1"
+  },
+  "courseTitle": "Introduction to Cloud Services",
+  "courseNumber": "INFR 2670",
+  "courseSem": "FALL",
+  "courseYear": "2018",
+  "coursepos": "6"
+}]

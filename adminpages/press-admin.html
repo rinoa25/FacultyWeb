@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Press Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js">
+    </script>
+    <script src="/js/validJQ.js"></script>
+  </head>
+
+  <body style="background-color:darkslategrey;">
+
+    <form action="http://localhost:8080/press.html" method="GET">
+      <div class="mainBtn">
+        <button type="submit">Press</button>
+      </div>
+    </form>
+
+    <form action="http://localhost:8080/admin/" method="GET">
+      <div class="dashBtn">
+        <button type="submit">Dashboard</button>
+      </div>
+    </form>
+
+    <div class="adminContent">
+
+      <div class="adminTitle">
+        <h1>Update Press Info</h1>
+      </div>
+
+      <form class="" action="http://localhost:8080/pressupdate/" id="pressAdmin" name="pressAdmin" method="post" enctype="multipart/form-data">
+
+        <label><b>Press Title</b></label><br>
+        <input type="text" placeholder="Enter the press title" name="pressTitle" value="">
+        <br>
+
+        <label><b>Press Link</b></label><br>
+        <input type="text" placeholder="Enter the press link" name="pressLink" value="">
+        <br>
+
+        <label><b>Press Publisher</b></label><br>
+        <input type="text" placeholder="Enter the press publisher" name="pressPublisher"
+        value="">
+        <br>
+
+        <label><b>Press Publication Day</b></label><br>
+        <input type="text" placeholder="Enter the press publication day" name="pressDay" value="">
+        <br>
+
+        <label><b>Press Publication Month</b></label><br>
+        <select name="pressMonth" class="selectpressMonth" id="select">
+          <option style="color:gray" value="null" disabled selected>Select the press publication month</option>
+          <option class="others" value="JAN">JAN</option>
+          <option class="others" value="FEB">FEB</option>
+          <option class="others" value="MAR">MAR</option>
+          <option class="others" value="APR">APR</option>
+          <option class="others" value="MAY">MAY</option>
+          <option class="others" value="JUN">JUN</option>
+          <option class="others" value="JUL">JUL</option>
+          <option class="others" value="AUG">AUG</option>
+          <option class="others" value="SEP">SEP</option>
+          <option class="others" value="OCT">OCT</option>
+          <option class="others" value="NOV">NOV</option>
+          <option class="others" value="DEC">DEC</option>
+        </select><br>
+
+        <label><b>Press Publication Year</b></label><br>
+        <input type="text" placeholder="Enter the press publication year" name="pressYear" value="">
+        <br>
+
+        <label><b>Position of Press Info</b></label><br>
+        <select  id="select1" name="presspos" class="selectpresspos">
+          <option style="color:gray" value="null" disabled selected>Select the position number</option>
+          <option class="others" value="1">1</option>
+          <option class="others" value="2">2</option>
+          <option class="others" value="3">3</option>
+          <option class="others" value="4">4</option>
+          <option class="others" value="5">5</option>
+          <option class="others" value="6">6</option>
+        </select><br>
+
+        <label><b>Press Image</b></label><br><br>
+        <input type="file" name="pressimg" accept="image/*">
+        <br><br>
+
+        <div class="adminBtn">
+          <button type="submit">Update</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </body>
+
+</html>

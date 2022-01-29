@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Publications</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/myJS.js">
+    </script>
+    <script src="js/serverJS.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body onload="set_active();" ng-app="WebApp">
+
+    <nav>
+      <a href="http://localhost:8080/login/">
+      <div class="logo">Julie Thorpe</div>
+      </a>
+      <input type="checkbox" id="click">
+
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="pub.html">Publications</a></li>
+        <li><a  href="press.html">Press</a></li>
+        <li><a href="research.html">Research Interest and Programs</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="group.html">Research Group</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="spacer">
+      &nbsp;
+    </div>
+
+    <div class="content" ng-controller="pubCtrl">
+
+      <div class="Mtitle">
+        <h1>PUBLICATION LIST</h1>
+      </div>
+
+      <div id="wrapper">
+        <button class="PUbtn active" onclick="categorize('all')"> All Types<button>
+        <button class="PUbtn" onclick="categorize('journals')"> Journals</button>
+        <button class="PUbtn" onclick="categorize('cpapers')"> Conference Papers</button>
+        <button class="PUbtn" onclick="categorize('wpapers')"> Workshop Papers</button>
+        <button class="PUbtn" onclick="categorize('posters')"> Posters</button>
+        <button class="PUbtn" onclick="categorize('treports')"> Technical Reports</button>
+      </div><br>
+
+      <div class="PUrow">
+
+        <div class="PUcol journals">
+          <div class="PUcard">
+            <h3><a ng-href={{journal.pubLink}}>{{journal.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel jType">Journal</span>
+            <p>{{journal.pubAuthor}}</p>
+            <p>{{journal.pubPublisher}}</p>
+            <p>Publication Year: {{journal.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol wpapers">
+          <div class="PUcard">
+            <h3><a ng-href={{wpaper.pubLink}}>{{wpaper.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel wType">Workshop Paper</span>
+            <p>{{wpaper.pubAuthor}}</p>
+            <p>{{wpaper.pubPublisher}}</p>
+            <p>Publication Year: {{wpaper.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol journals">
+          <div class="PUcard">
+            <h3><a ng-href={{journal2.pubLink}}>{{journal2.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel jType">Journal</span>
+            <p>{{journal2.pubAuthor}}</p>
+            <p>{{journal2.pubPublisher}}</p>
+            <p>Publication Year: {{journal2.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol posters">
+          <div class="PUcard">
+            <h3><a ng-href={{poster.pubLink}}>{{poster.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel pType">Poster</span>
+            <p>{{poster.pubAuthor}}</p>
+            <p>{{poster.pubPublisher}}</p>
+            <p>Publication Year: {{poster.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol posters">
+          <div class="PUcard">
+            <h3><a ng-href={{poster2.pubLink}}>{{poster2.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel pType">Poster</span>
+            <p>{{poster2.pubAuthor}}</p>
+            <p>{{poster2.pubPublisher}}</p>
+            <p>Publication Year: {{poster2.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol posters">
+          <div class="PUcard">
+            <h3><a ng-href={{poster3.pubLink}}>{{poster3.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel pType">Poster</span>
+            <p>{{poster3.pubAuthor}}</p>
+            <p>{{poster3.pubPublisher}}</p>
+            <p>Publication Year: {{poster3.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol cpapers">
+          <div class="PUcard">
+            <h3><a ng-href={{cpaper.pubLink}}>{{cpaper.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel cType">Conference Paper</span>
+            <p>{{cpaper.pubAuthor}}</p>
+            <p>{{cpaper.pubPublisher}}</p>
+            <p>Publication Year: {{cpaper.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol posters">
+          <div class="PUcard">
+            <h3><a ng-href={{poster4.pubLink}}>{{poster4.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel pType">Poster</span>
+            <p>{{poster4.pubAuthor}}</p>
+            <p>{{poster4.pubPublisher}}</p>
+            <p>Publication Year: {{poster4.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol cpapers">
+          <div class="PUcard">
+            <h3><a ng-href={{cpaper2.pubLink}}>{{cpaper2.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel cType">Conference Paper</span>
+            <p>{{cpaper2.pubAuthor}}</p>
+            <p>{{cpaper2.pubPublisher}}</p>
+            <p>Publication Year: {{cpaper2.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol journals">
+          <div class="PUcard">
+            <h3><a ng-href={{journal3.pubLink}}>{{journal3.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel jType">Journal</span>
+            <p>{{journal3.pubAuthor}}</p>
+            <p>{{journal3.pubPublisher}}</p>
+            <p>Publication Year: {{journal3.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol cpapers">
+          <div class="PUcard">
+            <h3><a ng-href={{cpaper3.pubLink}}>{{cpaper3.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel cType">Conference Paper</span>
+            <p>{{cpaper3.pubAuthor}}</p>
+            <p>{{cpaper3.pubPublisher}}</p>
+            <p>Publication Year: {{cpaper3.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol wpapers">
+          <div class="PUcard">
+            <h3><a ng-href={{wpaper2.pubLink}}>{{wpaper2.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel wType">Workshop Paper</span>
+            <p>{{wpaper2.pubAuthor}}</p>
+            <p>{{wpaper2.pubPublisher}}</p>
+            <p>Publication Year: {{wpaper2.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol cpapers">
+          <div class="PUcard">
+            <h3><a ng-href={{cpaper4.pubLink}}>{{cpaper4.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel cType">Conference Paper</span>
+            <p>{{cpaper4.pubAuthor}}</p>
+            <p>{{cpaper4.pubPublisher}}</p>
+            <p>Publication Year: {{cpaper4.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol cpapers">
+          <div class="PUcard">
+            <h3><a ng-href={{cpaper5.pubLink}}>{{cpaper5.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel cType">Conference Paper</span>
+            <p>{{cpaper5.pubAuthor}}</p>
+            <p>{{cpaper5.pubPublisher}}</p>
+            <p>Publication Year: {{cpaper5.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol journals">
+          <div class="PUcard">
+            <h3><a ng-href={{journal4.pubLink}}>{{journal4.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel jType">Journal</span>
+            <p>{{journal4.pubAuthor}}</p>
+            <p>{{journal4.pubPublisher}}</p>
+            <p>Publication Year: {{journal4.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol journals">
+          <div class="PUcard">
+            <h3><a ng-href={{journal5.pubLink}}>{{journal5.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel jType">Journal</span>
+            <p>{{journal5.pubAuthor}}</p>
+            <p>{{journal5.pubPublisher}}</p>
+            <p>Publication Year: {{journal5.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol journals">
+          <div class="PUcard">
+            <h3><a ng-href={{journal6.pubLink}}>{{journal6.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel jType">Journal</span>
+            <p>{{journal6.pubAuthor}}</p>
+            <p>{{journal6.pubPublisher}}</p>
+            <p>Publication Year: {{journal6.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol wpapers">
+          <div class="PUcard">
+            <h3><a ng-href={{wpaper3.pubLink}}>{{wpaper3.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel wType">Workshop Paper</span>
+            <p>{{wpaper3.pubAuthor}}</p>
+            <p>{{wpaper3.pubPublisher}}</p>
+            <p>Publication Year: {{wpaper3.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol treports">
+          <div class="PUcard">
+            <h3><a ng-href={{treport.pubLink}}>{{treport.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel tType">Technical Report</span>
+            <p>{{treport.pubAuthor}}</p>
+            <p>{{treport.pubPublisher}}</p>
+            <p>Publication Year: {{treport.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol treports">
+          <div class="PUcard">
+            <h3><a ng-href={{treport2.pubLink}}>{{treport2.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel tType">Technical Report</span>
+            <p>{{treport2.pubAuthor}}</p>
+            <p>{{treport2.pubPublisher}}</p>
+            <p>Publication Year: {{treport2.pubYear}}</p>
+          </div>
+        </div>
+
+        <div class="PUcol treports">
+          <div class="PUcard">
+            <h3><a ng-href={{treport3.pubLink}}>{{treport3.pubTitle}}</a></h3><br>
+            <span span style="float: right" class="PUlabel tType">Technical Report</span>
+            <p>{{treport3.pubAuthor}}</p>
+            <p>{{treport3.pubPublisher}}</p>
+            <p>Publication Year: {{treport3.pubYear}}</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+    function categorize(category) {
+      var i;
+      var type = document.getElementsByClassName("PUcol");
+      if (category == "all") category = "";
+      for (i = 0; i < type.length; i++) {
+        remove(type[i], "allTypes");
+        if (type[i].className.indexOf(category) > -1) add(type[i], "allTypes");
+      }
+    }
+    categorize("all")
+    // Adds publication to correct category
+    function add(publication, type) {
+      var i;
+      var comparison1 = publication.className.split(" ");
+      var comparison2 = type.split(" ");
+      for (i = 0; i < comparison2.length; i++) {
+        if (comparison1.indexOf(comparison2[i]) == -1) {publication.className += " "
+        + comparison2[i];}
+      }
+    }
+    // Removes publication
+    function remove(publication, type) {
+      var i;
+      var comparison1 = publication.className.split(" ");
+      var comparison2 = type.split(" ");
+      for (i = 0; i < comparison2.length; i++) {
+        while (comparison1.indexOf(comparison2[i]) > -1) {
+          comparison1.splice(comparison1.indexOf(comparison2[i]), 1);
+        }
+      }
+      publication.className = comparison1.join(" ");
+    }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Publication Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js">
+    </script>
+    <script src="/js/validJQ.js"></script>
+  </head>
+
+  <body style="background-color:darkslategrey;">
+
+    <form action="http://localhost:8080/pub.html" method="GET">
+      <div class="mainBtn">
+        <button type="submit">Publications</button>
+      </div>
+    </form>
+
+    <form action="http://localhost:8080/admin/" method="GET">
+      <div class="dashBtn">
+        <button type="submit">Dashboard</button>
+      </div>
+    </form>
+
+    <div class="adminContent">
+
+      <div class="adminTitle">
+        <h1>Update Publication Info</h1>
+      </div>
+
+      <form class="" action="http://localhost:8080/pubupdate/" id="pubAdmin" name="pubAdmin" method="post">
+
+        <label><b>Publication Title</b></label><br>
+        <input type="text" placeholder="Enter the publication title" name="pubTitle" value="">
+        <br>
+
+        <label><b>Publication Link</b></label><br>
+        <input type="text" placeholder="Enter the publication link" name="pubLink" value="">
+        <br>
+
+        <label><b>Publication's Authors</b></label><br>
+        <input type="text" placeholder="Enter the publication's authors" name="pubAuthor"
+        value="">
+        <br>
+
+        <label><b>Publication's Publisher</b></label><br>
+        <input type="text" placeholder="Enter the publication's publisher" name="pubPublisher"
+        value="">
+        <br>
+
+        <label><b>Publication Year</b></label><br>
+        <input type="text" placeholder="Enter the publication year" name="pubYear" value="">
+        <br>
+
+        <label><b>Publication Type</b></label><br>
+        <select name="pubType" class="selectpubType"  id="select">
+          <option style="color:gray" value="null" disabled selected>Select the publication type</option>
+          <option class="others" value="Journal">Journal</option>
+          <option class="others" value="Conference Paper">Conference Paper</option>
+          <option class="others" value="Workshop Paper">Workshop Paper</option>
+          <option class="others" value="Poster">Poster</option>
+          <option class="others" value="Technical Report">Technical Report</option>
+        </select><br>
+
+        <label style="display:none;" id="journalpos"><b>Position of Journal Info</b>
+          <select name="pubjournalpos" class="selectpubjournalpos" id="select1">
+            <option style="color:gray" value="null" disabled selected>Select the position number</option>
+            <option class="others" value="1">1</option>
+            <option class="others" value="2">2</option>
+            <option class="others" value="3">3</option>
+            <option class="others" value="4">4</option>
+            <option class="others" value="5">5</option>
+            <option class="others" value="6">6</option>
+          </select><br>
+        </label>
+
+        <label style="display:none;" id="cpaperpos"><b>Position of Conference Paper Info</b>
+          <select name="pubcpaperpos" class="selectpubcpaperpos" id="select2">
+            <option style="color:gray" value="null" disabled selected>Select the position number</option>
+            <option class="others" value="1">1</option>
+            <option class="others" value="2">2</option>
+            <option class="others" value="3">3</option>
+            <option class="others" value="4">4</option>
+            <option class="others" value="5">5</option>
+          </select><br>
+        </label>
+
+        <label style="display:none;" id="wpaperpos"><b>Position of Workshop Paper Info</b>
+          <select name="pubwpaperpos" class="selectpubwpaperpos" id="select3">
+            <option style="color:gray" value="null" disabled selected>Select the position number</option>
+            <option class="others" value="1">1</option>
+            <option class="others" value="2">2</option>
+            <option class="others" value="3">3</option>
+          </select><br>
+        </label>
+
+        <label style="display:none;" id="posterpos"><b>Position of Poster Info</b>
+          <select name="pubposterpos" class="selectpubposterpos" id="select4">
+            <option style="color:gray" value="null" disabled selected>Select the position number</option>
+            <option class="others" value="1">1</option>
+            <option class="others" value="2">2</option>
+            <option class="others" value="3">3</option>
+            <option class="others" value="4">4</option>
+          </select><br>
+        </label>
+
+        <label style="display:none;" id="treportpos"><b>Position of Technical Report Info</b>
+          <select name="pubtreportpos" class="selectpubtreportpos" id="select5">
+            <option style="color:gray" value="null" disabled selected>Select the position number</option>
+            <option class="others" value="1">1</option>
+            <option class="others" value="2">2</option>
+            <option class="others" value="3">3</option>
+          </select><br>
+        </label>
+
+        <div class="adminBtn">
+          <button type="submit">Update</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </body>
+
+</html>

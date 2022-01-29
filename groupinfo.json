@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "5fc1c3c5284dd693b4426d87"
+  },
+  "name": "Tony Wang",
+  "degree": "MSc",
+  "grad": "2022",
+  "status": "current",
+  "groupcurrentpos": "1",
+  "grouppastpos": null,
+  "studentImg": "/images/tony.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c626284dd693b4426d88"
+  },
+  "name": "Ali Naman",
+  "degree": "MSc",
+  "grad": "2021",
+  "status": "current",
+  "groupcurrentpos": "2",
+  "grouppastpos": null,
+  "studentImg": "/images/ali.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c648284dd693b4426d89"
+  },
+  "name": "Samira Zibaei",
+  "degree": "PhD",
+  "grad": "2021",
+  "status": "current",
+  "groupcurrentpos": "3",
+  "grouppastpos": null,
+  "studentImg": "/images/samira.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c66a284dd693b4426d8a"
+  },
+  "name": "Connor Crushing",
+  "degree": "MSc",
+  "grad": "2020",
+  "status": "current",
+  "groupcurrentpos": "4",
+  "grouppastpos": null,
+  "studentImg": "/images/connor.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c6c1284dd693b4426d8b"
+  },
+  "name": "Zeinab Joudaki",
+  "degree": "PhD",
+  "grad": "2017",
+  "status": "past",
+  "groupcurrentpos": null,
+  "grouppastpos": "1",
+  "studentImg": "/images/zeinab.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c6df284dd693b4426d8c"
+  },
+  "name": "Brent MacRae",
+  "degree": "MSc",
+  "grad": "2016",
+  "status": "past",
+  "groupcurrentpos": null,
+  "grouppastpos": "2",
+  "studentImg": "/images/brent.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c714284dd693b4426d8d"
+  },
+  "name": "Riaz Khalil",
+  "degree": "MITS",
+  "grad": "2015",
+  "status": "past",
+  "groupcurrentpos": null,
+  "grouppastpos": "3",
+  "studentImg": "/images/riaz.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c738284dd693b4426d8e"
+  },
+  "name": "Ruba Al-omari",
+  "degree": "MITS",
+  "grad": "2014",
+  "status": "past",
+  "groupcurrentpos": null,
+  "grouppastpos": "4",
+  "studentImg": "/images/ruba.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c757284dd693b4426d8f"
+  },
+  "name": "Destiny Ewansiha",
+  "degree": "MITS",
+  "grad": "2013",
+  "status": "past",
+  "groupcurrentpos": null,
+  "grouppastpos": "5",
+  "studentImg": "/images/destiny.jpg"
+},{
+  "_id": {
+    "$oid": "5fc1c778284dd693b4426d90"
+  },
+  "name": "Michael Damanka",
+  "degree": "MITS",
+  "grad": "2013",
+  "status": "past",
+  "groupcurrentpos": null,
+  "grouppastpos": "6",
+  "studentImg": "/images/michael.jpg"
+}]

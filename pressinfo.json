@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "5fc1942f40c900707c8a1fd3"
+  },
+  "pressTitle": "Protect Yourself Against Identity Theft",
+  "pressLink": "https://www.pressreader.com/canada/readers-digest-canada/20180301/281479276840269?",
+  "pressPublisher": "Reader's Digest",
+  "pressDay": "1",
+  "pressMonth": "MAR",
+  "pressYear": "2018",
+  "presspos": "1",
+  "pressimg": "/images/pressImg1.png"
+},{
+  "_id": {
+    "$oid": "5fc19e8240c900707c8a1fd4"
+  },
+  "pressTitle": "Resetting our password habits",
+  "pressLink": "https://www.cbsnews.com/video/resetting-our-password-habits/?",
+  "pressPublisher": "CBS News",
+  "pressDay": "19",
+  "pressMonth": "FEB",
+  "pressYear": "2017",
+  "presspos": "2",
+  "pressimg": "/images/pressImg2.png"
+},{
+  "_id": {
+    "$oid": "5fc19eea40c900707c8a1fd5"
+  },
+  "pressTitle": "Is there ‘love’ in your online passwords?",
+  "pressLink": "https://www.thestar.com/news/gta/2015/02/13/is-there-love-in-your-online-passwords.html?",
+  "pressPublisher": "Toronto Star",
+  "pressDay": "13",
+  "pressMonth": "FEB",
+  "pressYear": "2015",
+  "presspos": "3",
+  "pressimg": "/images/pressImg3.png"
+},{
+  "_id": {
+    "$oid": "5fc19f3340c900707c8a1fd6"
+  },
+  "pressTitle": "The Secret Life of Passwords",
+  "pressLink": "https://www.nytimes.com/2014/11/19/magazine/the-secret-life-of-passwords.html?",
+  "pressPublisher": "New York Times",
+  "pressDay": "19",
+  "pressMonth": "NOV",
+  "pressYear": "2014",
+  "presspos": "4",
+  "pressimg": "/images/pressImg4.png"
+},{
+  "_id": {
+    "$oid": "5fc19f9140c900707c8a1fd7"
+  },
+  "pressTitle": "Weak Passwords",
+  "pressLink": "https://rogerstv.com/media?lid=237&rid=2&sid=6458&gid=216317",
+  "pressPublisher": "Rogers TV",
+  "pressDay": "29",
+  "pressMonth": "SEP",
+  "pressYear": "2014",
+  "presspos": "5",
+  "pressimg": "/images/pressImg5.png"
+},{
+  "_id": {
+    "$oid": "5fc19fcd40c900707c8a1fd8"
+  },
+  "pressTitle": "Graphical passwords still far from picture perfect",
+  "pressLink": "https://searchsecurity.techtarget.com/news/1000783/Graphical-passwords-still-far-from-picture-perfect?",
+  "pressPublisher": "Search Security",
+  "pressDay": "18",
+  "pressMonth": "AUG",
+  "pressYear": "2004",
+  "presspos": "6",
+  "pressimg": "/images/pressImg6.png"
+}]

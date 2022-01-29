@@ -1,0 +1,1303 @@
+/* CSS OF NAV BAR */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibri', sans-serif;
+}
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav a{
+  text-decoration: none;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 10px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1800px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 1200px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 105vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a.active{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+/* CSS OF GENERAL CONTENT IN ALL SECTIONS */
+
+/* Ensures web content doesnt overlap with nav bar */
+/* Gives a space divider between them */
+.spacer{
+  width: 100%;
+  /* Demonstrates function */
+  /* border: solid 2px desiredcolor; */
+}
+/* Customizes web content */
+.content{
+  /* Position and z-index ensure images dont overlap in responsive mini nav menu */
+  position: absolute;
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+/* Specifies the boldness of the web's content's font */
+.content div{
+    font-weight: 700;
+}
+
+/* CSS OF MAIN TITLE FOR EACH SECTION */
+
+/* Customizes main titles for every page */
+.Mtitle h1{
+  letter-spacing: 2px;
+}
+/* Gives main titles a line under it */
+.Mtitle h1:after{
+  display: block;
+  content:' ';
+  background: black;
+  width: 20%;
+  height: 3px;
+  margin: 10px auto;
+  margin-bottom: 50px;
+}
+
+/* CSS OF HOME CONTENT */
+
+/*Styling of the home section*/
+.home{
+  display: flex;
+  background-color: darkslategrey;
+  color: white;
+  font-family: 'Calibri', sans-serif;
+}
+.home .home-content .text-1{
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: 40%;
+  font-size:5vw;
+}
+.home .home-content .text-1 span{
+  text-align: center;
+}
+/*Styling of the about me section*/
+section{
+  padding: 50px 0px;
+}
+.aboutme{
+  font-family: 'Calibri', sans-serif;
+}
+.aboutme .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 3vw;
+}
+.aboutme .title::before{
+  content:"";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 20%;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.aboutme .aboutme-content{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+.aboutme .aboutme-content .left{
+   text-align: center;
+   width: 30%;
+   margin-left: 60px;
+}
+.aboutme .aboutme-content .left img{
+  height: 80%;
+  width: 90%;
+  display: block;
+}
+.aboutme .aboutme-content .right{
+  text-align: left;
+  width: 55%;
+}
+.italicbio{
+  color:grey;
+  font-size:1.8vw;
+}
+.aboutme .aboutme-content .text-3{
+  font-size: 25px;
+  font-weight: 540;
+  margin-left: -60px;
+  margin-top: -100px;
+  width: 90%;
+  font-size:2vw;
+  white-space: pre-line;
+}
+/* Styling of the news section */
+.news{
+  background: black;
+  color: #fff;
+}
+.news .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Calibri' , sans-serif;
+  color:#fff;
+  font-size:3vw;
+}
+.news .title ::before{
+  content:"";
+  position: absolute;
+  bottom:0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.news .carousel{
+  max-width: 11150px;
+  display: flex;
+}
+.news .carousel .card{
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.news .carousel .card:hover{
+  background: darkslategrey;
+}
+.news .carousel .card .box{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  max-height: 270px;
+}
+.news .carousel .card:hover .box{
+  transform: scale(1.05);
+}
+.news .carousel .card .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin:10px 0 7px 0;
+  font-size:2vw;
+}
+.card p {
+  font-size:1.2vw;
+}
+.news .carousel .card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid darkslategrey;
+  transition: all 0.3s ease;
+}
+.news .carousel .card:hover img{
+  border-color: #fff;
+}
+.news .card .box .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.news .card .box .btn button{
+  background: darkslategrey;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1.5vw;
+}
+.news .card .box .btn button : hover{
+  transform: scale(0.9);
+}
+.news .carousel .card:hover .box .btn button{
+  background: #fff;
+  color: black;
+}
+/* Styling of the delivery and content of news */
+.popup .newsOverlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+.popup .newsInfo {
+  position:absolute;
+  top:72%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:black;
+  /* width:600px; */
+  /* height:350px; */
+  width: 55%;
+  height: 25%;
+  z-index:2;
+  text-align:left;
+  padding:20px;
+  box-sizing:border-box;
+  color: white;
+  overflow: auto;
+  border: solid 3px darkslategrey;
+  border-radius: 0.5rem;
+}
+.newsInfo h4:after {
+  content:' ';
+  display:block;
+  border:1px solid #d0d0d0;
+  border-radius:4px;
+}
+.newsInfo p{
+  font-weight: normal;
+  white-space: pre-line;
+}
+.newsInfo a {
+  color: white;
+  text-decoration: none;
+}
+.newsInfo a:hover {
+  text-decoration: underline;
+}
+.popup .closeBtn {
+  cursor:pointer;
+  position:absolute;
+  right:10px;
+  top:10px;
+  width:30px;
+  height:30px;
+  background:#222;
+  color:#fff;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+}
+.popup.active .newsOverlay {
+  display:block;
+}
+.popup.active .newsInfo {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+/* responsive media query*/
+@media(max-width: 1100px){
+  .title::before{
+    margin-bottom: 10px;
+  }
+  .aboutme .aboutme-content .text-3{
+    margin-left: -50px;
+  }
+}
+@media(max-width: 1000px){
+  .aboutme .aboutme-content .text-3{
+    margin-left: -40px;
+  }
+}
+@media(max-width: 900px){
+  .aboutme .aboutme-content .text-3{
+    margin-left: -30px;
+  }
+}
+@media(max-width: 790px){
+  .aboutme .aboutme-content .left img{
+    width: 100%;
+    margin-left: -50px;
+  }
+}
+@media(max-width: 650px){
+  .aboutme .aboutme-content .left img{
+    width: 90%;
+    margin-left: -50px;
+  }
+  .aboutme .aboutme-content .text-3{
+    margin-left: -25px;
+  }
+}
+
+/* CSS OF PUBLICATIONS CONTENT */
+
+/* Styles the buttons */
+.PUbtn{
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+  margin: auto 5px;
+}
+/* When user hovers on a button, it will change to specified colour */
+.PUbtn:hover, .PUbtn.active {
+  background-color: darkslategrey;
+}
+/* When screen is 1300px buttons will be smaller */
+@media screen and (max-width: 1300px) {
+  .PUbtn {
+    padding: 7px 10px;
+    margin: 6px 5px;
+  }
+}
+/* Each row has one publication */
+.PUcol{
+  float: left;
+  width: 100%;
+  /* Hide all elements by default */
+  display: none;
+}
+/* The "allTypes" class is added to the filtered elements */
+.allTypes {
+  display: block;
+}
+/* Customizes the card of each publication */
+.PUcard{
+  border: solid 2px lightgrey;
+  background-color: #eee;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  padding: auto 10px;
+  margin: 20px auto;
+  width: 65%;
+}
+/* Correctly formats the words inside the cards */
+.PUcard h3, .PUcard p{
+  /* margin-left: 30px;; */
+  margin: auto 30px;
+  text-align: left;
+}
+/* Ensures that the title is bolder */
+.PUcard p{
+  font-weight: normal;
+}
+/* When screen is 600px cards will adjust to smaller screen */
+@media screen and (max-width: 600px) {
+  .PUcol{
+    width: 100%;
+    display: block;
+  }
+  .PUcard{
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+/* Removes underline under the links */
+/* All links will be that specified colour (whether it has been visited or not) */
+.PUcard a{
+  color: darkslategrey;
+  text-decoration: none;
+}
+/* Customizes the labels */
+.PUlabel{
+  color: white;
+  padding: 2px 10px;
+  width: 20%;
+}
+/* The labels */
+.jType {background-color: seagreen;}
+.cType {background-color: cornflowerblue;}
+.wType {background-color: tomato;}
+.pType {background-color: mediumpurple;}
+.tType {background-color: lightcoral;}
+
+/* CSS OF PRESS CONTENT */
+
+/* Formats publisher and date */
+.pressOverlay {
+  position: absolute;
+  bottom: 135px;
+  background: black;
+  width: 30%;
+  color: white;
+  text-align: center;
+  left: 35%;
+  border: solid 1.8px white;
+  font-size: 10pt;
+}
+/* Formats images to suit the overlay */
+.pressImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Create 2 equal columns that floats next to each other */
+.pressCol {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+  padding-bottom: 40px;
+}
+/* Styles the view buttons */
+.pressBtn{
+  background: darkslategrey;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pressBtn:hover{
+  opacity: 0.8;
+}
+/* Customizes each press card and info inside it*/
+.pressInfo {
+  background-color: white;
+  text-align: center;
+  color:white;
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 15pt;
+  background-color: black;
+  max-height: 405px;
+}
+.pressInfo p{
+  color: black;
+  font-size: 13pt;
+  font-weight: normal;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .pressCol{
+    width: 100%;
+  }
+}
+
+/* CSS OF INTERESTS & PROGRAMS CONTENT */
+
+/* Customizes the interest section */
+.interest{
+  display: grid;
+  margin: -50px 90px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media (max-width: 700px) {
+  .interest{
+    margin: -50px auto;
+  }
+}
+.interest .interest_box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.interest .interest_box .front-face{
+  background: black;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.interest_box .front-face .icon{
+  height: 80px;
+}
+.interest_box .front-face .icon i{
+  font-size: 65px;
+}
+.interest_box .front-face span,
+.interest_box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.interest_box .front-face .icon i,
+.interest_box .front-face span{
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.interest_box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(-135deg, darkslategrey ,darkslategrey);
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.interest_box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.interest_box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.interest_box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+/* Customizes title for project for every page */
+.Mtitle2 h1{
+  letter-spacing: 2px;
+  font-size: 35px;
+  font-weight: 600px;
+}
+/* Gives project title a line under it */
+.Mtitle2 h1:after{
+  display: block;
+  content:' ';
+  background: black;
+  width: 20%;
+  height: 3px;
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+/* Customizes the project section*/
+.project {
+  display: grid;
+  grid-gap: 20px;
+}
+.project .project_box .grid-container--fit {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+}
+@media (max-width: 700px) {
+    .project{
+      margin: -30px auto;
+  }
+}
+.project .project_box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.project .project_box .project_front-face{
+  background: black;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.project_box .project_front-face .icon img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid darkslategrey;
+}
+.project_box .project_front-face span,
+.project_box .project_front-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.project_box .project_front-face .icon i,
+.project_box .project_front-face span{
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.project_box .project_back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(-135deg, darkslategrey , darkslategrey);
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.project_box .project_back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.project_box:hover .project_back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.project_box:hover .project_front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+
+/* CSS OF TEACHING CONTENT */
+
+/* Customizes the vertical line of teaching history */
+.teachingHist {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* Customizes the vertical line of teaching history */
+.teachingHist::after {
+  position: absolute;
+  content: ' ';
+  background-color: black;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  margin-left: -3px;
+}
+/* Customizes the position of each courseCard */
+.courseCard {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+/* Customizes the circles (position / colour / shape) on the vertical line */
+.courseCard::after {
+  position: absolute;
+  content: ' ';
+  background-color: darkslategrey;
+  border: 4px solid black;
+  border-radius: 50%;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  top: 15px;
+  right: -17px;
+}
+/* Places the respective courseCard to the left */
+.left {
+  left: 0;
+}
+/* Places the respective courseCard to the right */
+.right {
+  left: 50%;
+}
+/* Fixes the circle for courseCard on the right side */
+.right::after {
+  left: -16px;
+}
+/* Customizes the words inside the courseCard (including shape / size / colour of actual courseCard) */
+.CCwords {
+  position: relative;
+  letter-spacing: 2px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 30px;
+}
+.CCwords h2{
+  text-transform: uppercase;
+}
+.CCwords h4{
+  text-transform: capitalize;
+}
+.CCwords p{
+  text-transform: uppercase;
+}
+/* Customizes the changing effect specs of the words */
+.CCwordsChange{
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* When user hovers over on courseCard, the words change */
+/* Words do a vertical flip */
+.CCwords:hover .CCwordsChange {
+  transform: rotateX(180deg);
+}
+/* Hides the changing word */
+.semYear, .courseInfo {
+  backface-visibility: hidden;
+}
+/* courseInfo does a vertical flip back to semYear when user stops hovering over courseCard  */
+.courseInfo {
+  transform: rotateX(180deg);
+}
+/* When screen is 1200px these changes will occur */
+@media screen and (max-width: 1200px) {
+  /* Place the vertical line to the left */
+  .teachingHist::after {
+  left: 31px;
+  }
+  /* Full-width courseCards */
+  .courseCard {
+  width: 100%;
+  padding-left: 60px;
+  }
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  /* Make all right courseCards behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+/* CSS OF RESEARCH GROUP CONTENT */
+/* Includes some of contact / publications / press content */
+
+/* Customizes title specifying "current students" & "past students" */
+.Mtitle h2, .RGpast h2 {
+  color: white;
+  background-color: black;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  font-weight: normal;
+}
+/* Format of RG profiles */
+.RGcol{
+  /* Always start from the left */
+  float: left;
+  /* Each row only allows 4 profiles due to 25% (X 4 = 100) */
+  width: 25%;
+  /* Each profile haves spaces following the padding below */
+  padding: 20px 30px;
+}
+/* Instead of 4 profiles in one row */
+/* Each profile will be stacked together (top to bottom) when screen is 1200px */
+@media screen and (max-width: 1200px) {
+  .RGcol{
+    width: 100%;
+    display: block;
+  }
+}
+/* Customizes profiles */
+.RGprofile {
+  /* Gives profiles a polaroid effect */
+  padding: 20px;
+  /* Gives profiles a subtle shadow surrounding it */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* Customizes the info inside RGprofiles / contactCards */
+.RGinfo, .contactInfo{
+  padding: 16px;
+  padding-bottom: 0px;
+}
+/* Helps clear floats in RG / contact / publications / press sections */
+.RGinfo::after, .RGrow::after, .contactInfo::after, .contactRow:after, .PUcard::after, .PUrow::after, .pressRow:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Customizes text specifying degree of profile */
+.RGdegree {
+  color: grey;
+}
+/* Customizes the position of the overlay */
+.RGoverlaypositon {
+  position: relative;
+  width: 100%;
+}
+/* Correctly specifies the position of the overlay */
+.RGimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Customizes the text inside overlay (year of grad) */
+.RGyear {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: black;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  padding: 10px;
+  text-align: center;
+}
+/* When user hovers over the profiles, overlay will show */
+.RGprofile:hover .RGyear {
+  opacity: 1;
+}
+
+/* CSS OF CONTACT CONTENT */
+
+/* Format of contactCards */
+.contactCol{
+  float: left;
+  /* Each row only allows 3 cards due to 33.33%  */
+  width: 33.33%;
+  /* Each contactCard are separated  following the padding below */
+  padding: 0px 15px;
+}
+/* Format of  responsive map */
+.contactCol2{
+  float: left;
+  /* Each row only allows 1 map due to 100% occupying entire row  */
+  width: 100%;
+  padding: 50px 15px;
+}
+/* Instead of 3 cards in one row */
+/* Each card will be stacked together (top to bottom) when screen is 1200px */
+@media screen and (max-width: 1200px) {
+  .contactCol{
+    width: 100%;
+    padding: 20px;
+  }
+}
+/* Customizes shape and colour and padding inside cards */
+.contactCard{
+  height: 230px;
+  background-color: black;
+  padding: 20px;
+}
+/* Customizes card title */
+.contactInfo h3{
+  color: lightgrey;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+/* Customizes card info */
+.contactInfo p{
+  color: lightgrey;
+  white-space: pre-line;
+}
+/* Customizes card icon */
+.contactCardIcon{
+  color: darkslategrey;
+  font-size: 30px;
+  border-radius: 50%;
+  border: solid 2px white;
+  box-shadow: 0px 0px 5px grey;
+  padding: 0.5em 0.6em;
+}
+/* Specifies map's position */
+.mapResponsive{
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height:0;
+    border: solid 1px black;
+}
+/* Customizes size of map */
+.mapResponsive iframe{
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* CSS OF ALL ADMIN PAGES */
+
+.adminContent{
+  color: white;
+  background-color: black;
+  margin: auto;
+  margin-top: 10px;
+  width: 50%;
+  padding: 40px;
+  border-radius: 10px;
+}
+.adminTitle{
+  text-align: center;
+  letter-spacing: 2px;
+}
+.adminTitle h1::after{
+  display: block;
+  content:' ';
+  background: darkslategrey;
+  height: 3px;
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+/* Customizes the specs of  input boxes*/
+input[type=text], select, textarea{
+  /* Customizes width of  input box */
+  width: 100%;
+  /* Customizes placeholder text */
+  padding: 12px 20px;
+  /* Makes sure labels and input boxes have space between them (not squished) */
+  margin: 8px 0px;
+  /* Makes sure label is on top of input box */
+  display: block;
+  /* Customizes border of input boxes when clicked on */
+  outline: none;
+  box-sizing: border-box;
+}
+textarea{
+  /* Customizes width of  input box */
+  width: 100%;
+  /* Customizes placeholder text */
+  padding: 12px 10px;
+  /* Disables resizable property */
+  resize: none;
+  overflow: auto;
+  border-radius: 7px;
+}
+input[type=radio] {
+  margin-top: 8px;
+}
+/* Customizes specs of the update button */
+.adminBtn button {
+  background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 20px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+/* When mouse hovers over button, the button will lighten */
+.adminBtn button:hover {
+  opacity: 0.5;
+}
+/* JQuery Formats respective error messages from different sections */
+.error {
+  color:#FF0000;
+}
+/* selectable options will be black while "placeholder" remains grey */
+.others {
+  color:black;
+}
+/* Customizes specs of the main button */
+.mainBtn button {
+  position:fixed;
+  right:10px;
+  top:5px;
+  background-color: seagreen;
+  color: white;
+  padding: 8px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+/* When mouse hovers over button, the button will lighten */
+.mainBtn button:hover {
+  opacity: 0.5;
+}
+/* Customizes specs of the main button */
+.dashBtn button {
+  position:fixed;
+  left:10px;
+  top:5px;
+  background-color: teal;
+  color: white;
+  padding: 8px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+/* When mouse hovers over button, the button will lighten */
+.dashBtn button:hover {
+  opacity: 0.5;
+}
+
+/* CSS OF LOGIN PAGE */
+
+.loginbody{
+  display: grid;
+  margin-top: 70px;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(left, black, darkslategrey );
+}
+::selection{
+  background: #darkslategrey;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  width: 38%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: darkslategrey;
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, black, darkslategrey, black, darkslategrey);
+  border-radius: 5px;
+  transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* Customizes specs of the logout button */
+.homeBtn button {
+  position:fixed;
+  right:10px;
+  top:5px;
+  background-color: seagreen;
+  color: white;
+  padding: 8px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 5px;
+}
+/* When mouse hovers over button, the button will lighten */
+.homeBtn button:hover {
+  opacity: 0.5;
+}
+
+/* CSS OF ADMIN DASHBOARD PAGE */
+
+/* Customizes specs of the admin button */
+.mainAdminBtn button {
+  background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  width: 65%;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+/* When mouse hovers over button, the button will lighten */
+.mainAdminBtn button:hover {
+  opacity: 0.5;
+}
+/* Customizes specs of the logout button */
+.logoutBtn button {
+  position:fixed;
+  right:10px;
+  top:5px;
+  background-color: red;
+  color: white;
+  padding: 8px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 5px;
+}
+/* When mouse hovers over button, the button will lighten */
+.logoutBtn button:hover {
+  opacity: 0.5;
+}
+/* Customizes specs of the main button */
+.mainAdminBtn2 button {
+  background-color: seagreen;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  width: 65%;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+/* When mouse hovers over button, the button will lighten */
+.mainAdminBtn2 button:hover {
+  opacity: 0.5;
+}

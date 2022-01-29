@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Teaching</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/serverJS.js">
+    </script>
+  </head>
+
+  <body ng-app="WebApp">
+
+    <nav>
+      <a href="http://localhost:8080/login/">
+      <div class="logo">Julie Thorpe</div>
+      </a>
+      <input type="checkbox" id="click">
+
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pub.html">Publications</a></li>
+        <li><a  href="press.html">Press</a></li>
+        <li><a href="research.html">Research Interest and Programs</a></li>
+        <li><a class= "active"href="teaching.html">Teaching</a></li>
+        <li><a  href="group.html">Research Group</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="spacer">
+      &nbsp;
+    </div>
+
+    <div class="content" ng-controller="teachingCtrl">
+
+      <div class="Mtitle">
+        <h1>LIST OF COURSES</h1>
+      </div>
+
+      <div class="teachingHist">
+
+        <div class="courseCard left">
+          <div class="CCwords">
+            <br>
+            <div class="CCwordsChange">
+              <div class="semYear">
+                <h2>{{teaching.courseSem}} {{teaching.courseYear}}</h2>
+              </div>
+              <div class="courseInfo">
+                <h4>{{teaching.courseTitle}}</h4>
+                <p>{{teaching.courseNumber}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courseCard right">
+          <div class="CCwords">
+            <br>
+            <div class="CCwordsChange">
+              <div class="semYear">
+                <h2>{{teaching2.courseSem}} {{teaching2.courseYear}}</h2>
+              </div>
+              <div class="courseInfo">
+                <h4>{{teaching2.courseTitle}}</h4>
+                <p>{{teaching2.courseNumber}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courseCard left">
+          <div class="CCwords">
+            <br>
+            <div class="CCwordsChange">
+              <div class="semYear">
+                <h2>{{teaching3.courseSem}} {{teaching3.courseYear}}</h2>
+              </div>
+              <div class="courseInfo">
+                <h4>{{teaching3.courseTitle}}</h4>
+                <p>{{teaching3.courseNumber}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courseCard right">
+          <div class="CCwords">
+            <br>
+            <div class="CCwordsChange">
+              <div class="semYear">
+                <h2>{{teaching4.courseSem}} {{teaching4.courseYear}}</h2>
+              </div>
+              <div class="courseInfo">
+                <h4>{{teaching4.courseTitle}}</h4>
+                <p>{{teaching4.courseNumber}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courseCard left">
+          <div class="CCwords">
+            <br>
+            <div class="CCwordsChange">
+              <div class="semYear">
+                <h2>{{teaching5.courseSem}} {{teaching5.courseYear}}</h2>
+              </div>
+              <div class="courseInfo">
+                <h4>{{teaching5.courseTitle}}</h4>
+                <p>{{teaching5.courseNumber}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courseCard right">
+          <div class="CCwords">
+            <br>
+            <div class="CCwordsChange">
+              <div class="semYear">
+                <h2>{{teaching6.courseSem}} {{teaching6.courseYear}}</h2>
+              </div>
+              <div class="courseInfo">
+                <h4>{{teaching6.courseTitle}}</h4>
+                <p>{{teaching6.courseNumber}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+
+  </body>
+</html>

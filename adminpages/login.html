@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js">
+    </script>
+    <script src="/js/validJQ.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <!--Titles-->
+  <body class="loginbody">
+
+    <form action="http://localhost:8080" method="get">
+      <div class="homeBtn">
+        <button type="submit">Home</button>
+      </div>
+    </form>
+
+    <div class="wrapper">
+
+      <div class="title-text">
+        <div class="title login">Login Form</div>
+      </div>
+
+      <div class="form-container">
+
+        <!-- Login Page-->
+        <div class="form-inner">
+
+          <form class="" action="http://localhost:8080/loginupdate/" id="loginAdmin" name="loginAdmin" method="post" class="login">
+
+            <div class="field">
+              <input type="text" name="username" placeholder="Username" value="">
+            </div><br>
+
+            <div class="field">
+              <input type="password" name="password" placeholder="Password" value="">
+            </div><br>
+
+              <div class="field btn" class="adminBtn">
+                <div class="btn-layer" ></div>
+                <input type="submit" value="Login">
+              </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

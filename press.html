@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Press</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/serverJS.js">
+    </script>
+  </head>
+
+  <body ng-app="WebApp">
+
+    <nav>
+      <a href="http://localhost:8080/login/">
+      <div class="logo">Julie Thorpe</div>
+      </a>
+      <input type="checkbox" id="click">
+
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pub.html">Publications</a></li>
+        <li><a class= "active" href="press.html">Press</a></li>
+        <li><a href="research.html">Research Interest and Programs</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="group.html">Research Group</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="spacer">
+      &nbsp;
+    </div>
+
+    <div class="content" ng-controller="pressCtrl">
+
+      <div class="Mtitle">
+        <h1>PRESS RELEASES</h1>
+      </div>
+
+      <div class="pressRow">
+
+        <div class="pressCol">
+          <div class="pressInfo">
+            <img class"pressImg" ng-src={{press.pressimg}} alt="Image of first press">
+            <div class="pressOverlay">{{press.pressPublisher}} : {{press.pressDay}} {{press.pressMonth}} {{press.pressYear}}</div><br><br>
+            <h3>{{press.pressTitle}}</h3><br>
+            <a ng-href={{press.pressLink}}><button class="pressBtn">View</button></a>
+          </div>
+        </div>
+
+        <div class="pressCol">
+          <div class="pressInfo">
+            <img class"pressImg" ng-src={{press2.pressimg}} alt="Image of second press">
+            <div class="pressOverlay">{{press2.pressPublisher}} : {{press2.pressDay}} {{press2.pressMonth}} {{press2.pressYear}}</div><br><br>
+            <h3>{{press2.pressTitle}}</h3><br>
+            <a ng-href={{press2.pressLink}}><button class="pressBtn">View</button></a>
+          </div>
+        </div>
+
+        <div class="pressCol">
+          <div class="pressInfo">
+            <img class"pressImg" ng-src={{press3.pressimg}} alt="Image of third press">
+            <div class="pressOverlay">{{press3.pressPublisher}} : {{press3.pressDay}} {{press3.pressMonth}} {{press3.pressYear}}</div><br><br>
+            <h3>{{press3.pressTitle}}</h3><br>
+            <a ng-href={{press3.pressLink}}><button class="pressBtn">View</button></a>
+          </div>
+        </div>
+
+        <div class="pressCol">
+          <div class="pressInfo">
+            <img class"pressImg" ng-src={{press4.pressimg}} alt="Image of fourth press">
+            <div class="pressOverlay">{{press4.pressPublisher}} : {{press4.pressDay}} {{press4.pressMonth}} {{press4.pressYear}}</div><br><br>
+            <h3>{{press4.pressTitle}}</h3><br>
+            <a ng-href={{press4.pressLink}}><button class="pressBtn">View</button></a>
+          </div>
+        </div>
+
+        <div class="pressCol">
+          <div class="pressInfo">
+            <img class"pressImg" ng-src={{press5.pressimg}} alt="Image of fifth press">
+            <div class="pressOverlay">{{press5.pressPublisher}} : {{press5.pressDay}} {{press5.pressMonth}} {{press5.pressYear}}</div><br><br>
+            <h3>{{press5.pressTitle}}</h3><br>
+            <a ng-href={{press5.pressLink}}><button class="pressBtn">View</button></a>
+          </div>
+        </div>
+
+        <div class="pressCol">
+          <div class="pressInfo">
+            <img class"pressImg" ng-src={{press6.pressimg}} alt="Image of sixth press">
+            <div class="pressOverlay">{{press6.pressPublisher}} : {{press6.pressDay}} {{press6.pressMonth}} {{press6.pressYear}}</div><br><br>
+            <h3>{{press6.pressTitle}}</h3><br>
+            <a ng-href={{press6.pressLink}}><button class="pressBtn">View</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

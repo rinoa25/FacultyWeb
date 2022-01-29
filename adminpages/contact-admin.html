@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js">
+    </script>
+    <script src="/js/validJQ.js"></script>
+  </head>
+
+  <body style="background-color:darkslategrey;">
+
+    <form action="http://localhost:8080/contact.html" method="GET">
+      <div class="mainBtn">
+        <button type="submit">Contact</button>
+      </div>
+    </form>
+
+    <form action="http://localhost:8080/admin/" method="GET">
+      <div class="dashBtn">
+        <button type="submit">Dashboard</button>
+      </div>
+    </form>
+
+    <div class="adminContent">
+
+      <div class="adminTitle">
+        <h1>Update Contact Info</h1>
+      </div>
+
+      <form class="" action="http://localhost:8080/contactupdate/" id="contactAdmin" name="contactAdmin" method="post">
+
+        <label><b>Mailing Address</b></label><br>
+        <textarea name="address" placeholder="Enter your mailing address" value=""
+        style="height:100px"></textarea>
+        <br>
+
+        <label><b>Email Address</b></label><br>
+        <input type="text" placeholder="Enter your email address" name="email" value="">
+        <br>
+
+        <label><b>Phone Number</b></label><br>
+        <input type="text" placeholder="Enter your phone number" name="phone" value="">
+        <br>
+
+        <label><b>Map Location Embed URL</b></label><br>
+        <input type="text" placeholder="Enter the map location embed url" name="map" value="">
+        <br>
+
+        <div class="adminBtn">
+          <button type="submit">Update</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </body>
+
+</html>

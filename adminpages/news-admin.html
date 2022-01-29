@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>News Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js">
+    </script>
+    <script src="/js/validJQ.js"></script>
+  </head>
+
+  <body style="background-color:darkslategrey;">
+
+    <form action="http://localhost:8080" method="GET">
+      <div class="mainBtn">
+        <button type="submit">Home</button>
+      </div>
+    </form>
+
+    <form action="http://localhost:8080/admin/" method="GET">
+      <div class="dashBtn">
+        <button type="submit">Dashboard</button>
+      </div>
+    </form>
+
+    <div class="adminContent">
+
+      <div class="adminTitle">
+        <h1>Update News Info</h1>
+      </div>
+
+      <form class="" action="http://localhost:8080/newsupdate/" id="newsAdmin" name="newsAdmin" method="post">
+
+        <label><b>News' Title</b></label><br>
+        <input type="text" placeholder="Enter the news' title" name="newsTitle" value="">
+        <br>
+
+        <label><b>News' Publication Week</b></label><br>
+        <select name="newsDate" class="selectnewsDate" id="select">
+          <option style="color:gray" value="null" disabled selected>Select the day of the week</option>
+          <option class="others" value="Monday">Monday</option>
+          <option class="others" value="Tuesday">Tuesday</option>
+          <option class="others" value="Wednesday">Wednesday</option>
+          <option class="others" value="Thursday">Thursday</option>
+          <option class="others" value="Friday">Friday</option>
+          <option class="others" value="Saturday">Saturday</option>
+          <option class="others" value="Sunday">Sunday</option>
+        </select><br>
+
+        <label><b>News' Publication Month</b></label><br>
+        <select name="newsMonth" class="selectnewsMonth" id="select1">
+          <option style="color:gray" value="null" disabled selected>Select the news' publication month</option>
+          <option class="others" value="Jan">Jan</option>
+          <option class="others" value="Feb">Feb</option>
+          <option class="others" value="Mar">Mar</option>
+          <option class="others" value="Apr">Apr</option>
+          <option class="others" value="May">May</option>
+          <option class="others" value="Jun">Jun</option>
+          <option class="others" value="Jul">Jul</option>
+          <option class="others" value="Aug">Aug</option>
+          <option class="others" value="Sep">Sep</option>
+          <option class="others" value="Oct">Oct</option>
+          <option class="others" value="Nov">Nov</option>
+          <option class="others" value="Dec">Dec</option>
+        </select><br>
+
+        <label><b>News' Publication Day</b></label><br>
+        <input type="text" placeholder="Enter the news' publication day" name="newsDay" value="">
+        <br>
+
+        <label><b>News' Publication Year</b></label><br>
+        <input type="text" placeholder="Enter the news' publication year" name="newsYear" value="">
+        <br>
+
+        <label><b>Position of  News Info</b></label><br>
+        <select  id="select2" name="newspos" class="selectewspos">
+          <option style="color:gray" value="null" disabled selected>Select the position number</option>
+          <option class="others" value="1">1</option>
+          <option class="others" value="2">2</option>
+          <option class="others" value="3">3</option>
+          <option class="others" value="4">4</option>
+          <option class="others" value="5">5</option>
+          <option class="others" value="6">6</option>
+          <option class="others" value="7">7</option>
+          <option class="others" value="8">8</option>
+          <option class="others" value="9">9</option>
+          <option class="others" value="10">10</option>
+        </select><br>
+
+        <label><b>News Content</b></label><br>
+        <textarea name="newsContent" placeholder="Write your news here" value=""
+        style="height:250px"></textarea>
+        <br>
+
+        <div class="adminBtn">
+          <button type="submit">Update</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </body>
+
+</html>

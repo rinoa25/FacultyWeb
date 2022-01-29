@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/serverJS.js">
+    </script>
+  </head>
+
+  <body ng-app="WebApp">
+
+    <nav>
+      <a href="http://localhost:8080/login/">
+      <div class="logo">Julie Thorpe</div>
+      </a>
+      <input type="checkbox" id="click">
+
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pub.html">Publications</a></li>
+        <li><a  href="press.html">Press</a></li>
+        <li><a href="research.html">Research Interest and Programs</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a  href="group.html">Research Group</a></li>
+        <li><a class="active"href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="spacer">
+      &nbsp;
+    </div>
+
+    <div class="content" ng-controller="contactCtrl">
+
+      <div class="Mtitle">
+        <h1>CONTACT INFO</h1>
+      </div>
+
+      <div class="contactRow">
+
+        <div class="contactCol">
+          <div class="contactCard">
+            <div class="contactInfo">
+              <i class="contactCardIcon far fa-envelope"></i>
+              <h3>ADDRESS:</h3><br>
+              <p>{{address}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactCol">
+          <div class="contactCard">
+            <div class="contactInfo">
+              <i class="contactCardIcon fas fa-desktop"></i>
+              <h3>EMAIL:</h3><br>
+              <p>{{email}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactCol">
+          <div class="contactCard">
+            <div class="contactInfo">
+              <i class="contactCardIcon fas fa-phone"></i>
+              <h3>REACH OUT:</h3><br>
+              <p>{{phone}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactRow">
+        <div class="contactCol2">
+          <div class="mapResponsive">
+            <iframe ng-src={{map}} width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

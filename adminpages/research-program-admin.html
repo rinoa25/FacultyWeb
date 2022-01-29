@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Research Program Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js">
+    </script>
+    <script src="/js/validJQ.js"></script>
+  </head>
+
+  <body style="background-color:darkslategrey;">
+
+    <form action="http://localhost:8080/research.html" method="GET">
+      <div class="mainBtn">
+        <button type="submit">Research</button>
+      </div>
+    </form>
+
+    <form action="http://localhost:8080/admin/" method="GET">
+      <div class="dashBtn">
+        <button type="submit">Dashboard</button>
+      </div>
+    </form>
+
+    <div class="adminContent">
+
+      <div class="adminTitle">
+        <h1>Update Research Project Info</h1>
+      </div>
+
+      <form class="" action="http://localhost:8080/researchupdate/" id="researchAdmin" name="researchAdmin" method="post" enctype="multipart/form-data">
+
+        <label><b>Research Project Title</b></label><br>
+        <input type="text" placeholder="Enter the research project title" name="researchTitle" value="">
+        <br>
+
+        <label><b>Research Project Description</b></label><br>
+        <textarea name="researchDescrip" placeholder="Write the description of research project here" value=""
+        style="height:250px"></textarea>
+        <br>
+
+        <label><b>Research Project Image</b></label><br><br>
+        <input type="file" name="researchImg" accept="image/*">
+        <br><br>
+
+        <div class="adminBtn">
+          <button type="submit">Update</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </body>
+
+</html>
